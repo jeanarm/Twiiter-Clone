@@ -1,0 +1,20 @@
+
+
+
+<p id="notice"><%= notice %></p>
+<p class="down"></p>
+<p>
+  <strong>Username:</strong>
+  <%= @chat.username %>
+</p>
+
+<p>
+  <strong>Mail:</strong>
+  <%= @chat.mail %>
+</p>
+
+<%= link_to 'Confirm', chats_path %> |
+<%= link_to 'Back', edit_chat_path(@chat) %>
+
+
+

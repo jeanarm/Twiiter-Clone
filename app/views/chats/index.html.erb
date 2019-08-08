@@ -1,0 +1,21 @@
+
+
+<p id="notice"><%= notice %></p>
+<p class="down"></p>
+<h1>Chats</h1>
+
+
+    <% @chats.each do |chat| %>
+     
+       <br><p class="user"> <%= chat.username %>:</p>
+       <p> <%= chat.mail %></p>
+       <button><%= link_to 'New', new_chat_path %></button>
+       <button> <%= link_to 'Show', chat %></button>
+       <button><%= link_to 'Edit', edit_chat_path(chat) %></button>
+       <button><%= link_to 'Destroy', chat, method: :delete, data: { confirm: 'Are you sure?' } %></button>
+       <br>
+    <% end %>
+
+
+<br>
+
