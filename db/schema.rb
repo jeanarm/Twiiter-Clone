@@ -16,7 +16,6 @@ ActiveRecord::Schema.define(version: 2019_08_08_064219) do
   enable_extension "plpgsql"
 
   create_table "chats", force: :cascade do |t|
-    t.string "username"
     t.text "mail"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

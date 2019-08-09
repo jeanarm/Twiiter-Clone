@@ -7,7 +7,7 @@
 
     <% @chats.each do |chat| %>
      
-       <br><p class="user"> <%= chat.username %>:</p>
+  
        <p> <%= chat.mail %></p>
        <button><%= link_to 'New', new_chat_path %></button>
        <button> <%= link_to 'Show', chat %></button>
